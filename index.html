@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decode Message</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      form {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      #decodedMessage {
+        text-align: center;
+        white-space: pre-line;
+        color: red; /* message color */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Decode Message</h1>
+    <form id="fileForm">
+      <label for="fileInput">Choose a .txt file:</label>
+      <input type="file" id="fileInput" accept=".txt" />
+      <button type="button" onclick="decodeFile()">Decode</button>
+    </form>
+
+    <div id="decodedMessage"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
